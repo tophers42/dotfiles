@@ -39,20 +39,26 @@ git_prompt_info () {
 need_push () {
   if [ $($git rev-parse --is-inside-work-tree 2>/dev/null) ]
   then
-    number=$($git cherry -v origin/$(git symbolic-ref --short HEAD) | wc -l | bc)
-
-    if [[ $number == 0 ]]
+    branch_name=$(git symbolic-ref --short HEAD)
+    if [[ $($git branch -a | grep "^remotes/origin/$branch_name\$") ]]
     then
-      echo " "
+      number=$($git cherry -v origin/$branch_name | wc -l | bc)
+
+      if [[ $number == 0 ]]
+      then
+        echo " "
+      else
+        echo " with %{$fg_bold[magenta]%}$number unpushed%{$reset_color%}"
+      fi
     else
-      echo " with %{$fg_bold[magenta]%}$number unpushed%{$reset_color%}"
+      echo " unpushed"
     fi
   fi
 }
 
 virtual_env() {
-  if [ -z "$VIRTUAL_ENV" ] 
-  then 
+  if [ -z "$VIRTUAL_ENV" ]
+  then
     echo " "
   else
     echo "($(echo "$VIRTUAL_ENV" | sed 's/.*\///'))"
@@ -67,7 +73,7 @@ battery_status() {
   $ZSH/bin/battery-status
 }
 
-export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty)$(need_push) $(virtual_env)\n› '
+export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty) $(virtual_env)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
