@@ -21,6 +21,7 @@ brew 'readline'
 brew 'sqlite'
 brew 'python'
 brew 'postgresql'
+brew 'pyenv-virtualenvwrapper'
 brew 'wget'
 
 cask 'google-chrome'

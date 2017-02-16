@@ -1,8 +1,6 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-ZSH_THEME="pygmalion"
-
 fpath=($ZSH/functions $fpath)
 
 autoload -U $ZSH/functions/*(:t)

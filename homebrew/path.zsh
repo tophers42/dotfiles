@@ -1,0 +1,1 @@
+export BREWFILE_PATH="$HOME/.Brewfile"

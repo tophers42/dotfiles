@@ -50,6 +50,15 @@ need_push () {
   fi
 }
 
+virtual_env() {
+  if [ -z "$VIRTUAL_ENV" ] 
+  then 
+    echo " "
+  else
+    echo "($(echo "$VIRTUAL_ENV" | sed 's/.*\///'))"
+  fi
+}
+
 directory_name() {
   echo "%{$fg_bold[cyan]%}%d%\/%{$reset_color%}"
 }
@@ -58,7 +67,7 @@ battery_status() {
   $ZSH/bin/battery-status
 }
 
-export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty)$(need_push) $(virtual_env)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }

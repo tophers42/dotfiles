@@ -21,4 +21,15 @@ then
 
 fi
 
+# Run Homebrew through the Brewfile
+echo "Installing dependencies from Brewfile"
+brew bundle --file=$BREWFILE_PATH
+
+# Upgrade homebrew
+echo "› brew update"
+brew update
+
 exit 0
+
+
+
