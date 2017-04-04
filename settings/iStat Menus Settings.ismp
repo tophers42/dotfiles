@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>build</key>
+	<real>705</real>
+	<key>license</key>
+	<string>5545-7625-1549-2119-9405</string>
+	<key>preferences</key>
+	<dict>
+		<key>Battery_MenubarCustomizeStates</key>
+		<integer>0</integer>
+		<key>Battery_MenubarHideUPS</key>
+		<integer>0</integer>
+		<key>Battery_MenubarMode</key>
+		<string>5</string>
+		<key>CPU_AppFormat</key>
+		<integer>0</integer>
+		<key>CPU_MenubarGraphBreakdowns</key>
+		<integer>1</integer>
+		<key>CPU_MenubarMode</key>
+		<string>100,0,2</string>
+		<key>CPU_MenubarSingleHistoryGraph</key>
+		<integer>0</integer>
+		<key>CombinedDropdownDisplayMode</key>
+		<string>2,1,3,4,5,7,6</string>
+		<key>CombinedMenubarDisplayMode</key>
+		<string>2,1,3,4,5,7,6</string>
+		<key>Diagnostics_Enabled</key>
+		<integer>1</integer>
+		<key>Diagnostics_Sent_3.3</key>
+		<true/>
+		<key>Disks_DropdownDisplayMode</key>
+		<integer>1</integer>
+		<key>Disks_MenubarGroupItems</key>
+		<integer>0</integer>
+		<key>Disks_MenubarMode</key>
+		<string>100,9,8</string>
+		<key>Disks_MenubarRWBold</key>
+		<integer>1</integer>
+		<key>Disks_MenubarUFBold</key>
+		<integer>1</integer>
+		<key>DropdownTheme</key>
+		<integer>1</integer>
+		<key>Memory_MenubarMode</key>
+		<string>100,6,2</string>
+		<key>MenubarSkinColor</key>
+		<integer>0</integer>
+		<key>MenubarTheme</key>
+		<integer>1</integer>
+		<key>Network_MenubarMode</key>
+		<string>4,100,0,1</string>
+		<key>Network_TextBold</key>
+		<integer>1</integer>
+		<key>Sensors_MenubarMode</key>
+		<string>0</string>
+		<key>StatusItems-Order</key>
+		<array>
+			<integer>5</integer>
+			<integer>4</integer>
+			<integer>3</integer>
+			<integer>2</integer>
+			<integer>1</integer>
+		</array>
+		<key>Time_MenubarFlashSeperators</key>
+		<integer>0</integer>
+		<key>Time_MenubarFormat</key>
+		<array>
+			<string>EE</string>
+			<string>' '</string>
+			<string>MMM</string>
+			<string>___ICON__BLUE___</string>
+			<string>' '</string>
+			<string>HH</string>
+			<string>':'</string>
+			<string>mm</string>
+			<string>':'</string>
+			<string>ss</string>
+		</array>
+		<key>TimerFrequency</key>
+		<integer>1</integer>
+	</dict>
+	<key>version</key>
+	<real>5.309999942779541</real>
+</dict>
+</plist>
