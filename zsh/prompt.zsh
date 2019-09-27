@@ -73,7 +73,8 @@ battery_status() {
   $ZSH/bin/battery-status
 }
 
-export PROMPT=$'\n$(battery_status)in $(directory_name) $(git_dirty) $(virtual_env)\n› '
+export PROMPT=$'\n$(battery_status) on %D %T in $(directory_name) $(git_dirty) $(virtual_env)\n› '
+# export PROMPT=$'\n$(battery_status)in $(directory_name) $(virtual_env)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
